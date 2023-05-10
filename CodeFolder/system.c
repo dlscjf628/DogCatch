@@ -1,6 +1,6 @@
 #include "system.h"
 
-void display() {  // °ÔÀÓ Ã¢ È­¸é + ±ô¹ÚÀÌ´Â Ä¿¼­ ¾ø¾Ö±â 
+void display() {  // ê²Œì„ ì°½ í™”ë©´ + ê¹œë°•ì´ëŠ” ì»¤ì„œ ì—†ì• ê¸° 
 	system("mode con cols=100 lines=40 | title dogcatch");
 	
 	HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -12,7 +12,7 @@ void display() {  // °ÔÀÓ Ã¢ È­¸é + ±ô¹ÚÀÌ´Â Ä¿¼­ ¾ø¾Ö±â
 
 
 
-void xy(int x, int y) {  // Ä¿¼­ À§Ä¡ ÀÌµ¿ 
+void xy(int x, int y) {  // ì»¤ì„œ ìœ„ì¹˜ ì´ë™ 
 	HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 	COORD pos;
 	pos.X = x;
