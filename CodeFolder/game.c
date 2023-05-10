@@ -7,11 +7,11 @@ int userMP = 2000;
 void information() {
 	system("cls");
 	printf("\n\n\n\n");
-	printf("				  	  [Á¶ÀÛ¹ı]\n\n\n");
-	printf("					ÀÌµ¿ : W,A,S,D \n\n");
-	printf("			 		¼±ÅÃ : ½ºÆäÀÌ½º¹Ù \n\n\n\n\n");
-	printf("					°³¹ßÀÚ : À¯ÀÎÃ¶\n\n");
-	printf("		   	   ½ºÆäÀÌ½º¹Ù¸¦ ´©¸£¸é ¸ŞÀÎÈ­¸éÀ¸·Î µ¹¾Æ°©´Ï´Ù.");
+	printf("				  	  [ì¡°ì‘ë²•]\n\n\n");
+	printf("					ì´ë™ : W,A,S,D \n\n");
+	printf("			 		ì„ íƒ : ìŠ¤í˜ì´ìŠ¤ë°” \n\n\n\n\n");
+	printf("					ê°œë°œì : ìœ ì¸ì² \n\n");
+	printf("		   	   ìŠ¤í˜ì´ìŠ¤ë°”ë¥¼ ëˆ„ë¥´ë©´ ë©”ì¸í™”ë©´ìœ¼ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤.");
 	while(1) {
 		if(key() == choice) break;
 	} 
@@ -41,11 +41,11 @@ void title() {
 int menu() {
 	int x = 42 , y = 23;
 	xy(x-3,y);
-	printf("-> °ÔÀÓ½ÃÀÛ");
+	printf("-> ê²Œì„ì‹œì‘");
 	xy(x,y+1);
-	printf("°ÔÀÓ¼³¸í");
+	printf("ê²Œì„ì„¤ëª…");
 	xy(x,y+2);
-	printf("°ÔÀÓÁ¾·á");
+	printf("ê²Œì„ì¢…ë£Œ");
 	while(1) {
 		int k = key();
 		switch(k) {
@@ -79,13 +79,13 @@ int map() {
 	int y = 20;
 	system("cls");
 	printf("\n\n\n\n");
-	printf("					³­ÀÌµµ ¼±ÅÃ \n\n\n");
+	printf("					ë‚œì´ë„ ì„ íƒ \n\n\n");
 	xy(x-3,y);
-	printf("-> ½¬¿ò");
+	printf("-> ì‰¬ì›€");
 	xy(x,y+1);
-	printf("¾î·Á¿ò");
+	printf("ì–´ë ¤ì›€");
 	xy(x,y+2);
-	printf("¸ŞÀÎÈ­¸éÀ¸·Î");
+	printf("ë©”ì¸í™”ë©´ìœ¼ë¡œ");
 	while(1) {
 		int k = key();
 		switch (k) {
@@ -118,13 +118,13 @@ int userchoice() {
 	system("cls");
 	bossmap(0);
 	xy(x-3,y);
-	printf("-> °ø°İ");
+	printf("-> ê³µê²©");
 	xy(x,y+1);
-	printf("¹æ¾î"); 
+	printf("ë°©ì–´"); 
 	xy(x,y+2);
-	printf("½ºÅ³");
+	printf("ìŠ¤í‚¬");
 	xy(x,y+3);
-	printf("°¡¹æ");
+	printf("ê°€ë°©");
 	while(1) {
 		int k = key();
 		switch(k) {
@@ -157,13 +157,13 @@ int buserchoice() {
 	system("cls");
 	bossmap(1);
 	xy(x-3,y);
-	printf("-> °ø°İ");
+	printf("-> ê³µê²©");
 	xy(x,y+1);
-	printf("¹æ¾î"); 
+	printf("ë°©ì–´"); 
 	xy(x,y+2);
-	printf("½ºÅ³");
+	printf("ìŠ¤í‚¬");
 	xy(x,y+3);
-	printf("°¡¹æ");
+	printf("ê°€ë°©");
 	while(1) {
 		int k = key();
 		switch(k) {
@@ -197,12 +197,12 @@ int userattack() {
 	bossmap(0);
 	if (i == 5) {
 		xy(20,35);
-		printf("À¯Àú Å©¸®Æ¼ÄÃ!! : %d",critialdamage);
+		printf("ìœ ì € í¬ë¦¬í‹°ì»¬!! : %d",critialdamage);
 		return(critialdamage);
 	}
 	else {
 		xy(20,35);
-		printf("À¯Àú ±âº» °ø°İ : %d",damage);
+		printf("ìœ ì € ê¸°ë³¸ ê³µê²© : %d",damage);
 		return(damage);
 	}
 }
@@ -214,12 +214,12 @@ int buserattack() {
 	bossmap(1);
 	if (i == 5) {
 		xy(20,35);
-		printf("À¯Àú Å©¸®Æ¼ÄÃ!! : %d",critialdamage);
+		printf("ìœ ì € í¬ë¦¬í‹°ì»¬!! : %d",critialdamage);
 		return(critialdamage);
 	}
 	else {
 		xy(20,35);
-		printf("À¯Àú ±âº» °ø°İ : %d",damage);
+		printf("ìœ ì € ê¸°ë³¸ ê³µê²© : %d",damage);
 		return(damage);
 	}
 }
@@ -230,12 +230,12 @@ int defense() {
 	int i = rand()%5;
 	if (i == 4) {
 		xy(20,35);
-		printf("º¸½º Å©¸® ¹æ¾î! : %d",150);
+		printf("ë³´ìŠ¤ í¬ë¦¬ ë°©ì–´! : %d",150);
 		return(150);
 	}
 	else {
 		xy(20,35);
-		printf("º¸½º °ø°İ ¹æ¾î! : %d",50);
+		printf("ë³´ìŠ¤ ê³µê²© ë°©ì–´! : %d",50);
 		return(50);
 	}
 }
@@ -246,12 +246,12 @@ int bdefense() {
 	int i = rand()%5;
 	if (i == 4) {
 		xy(20,35);
-		printf("º¸½º Å©¸® ¹æ¾î! : %d",200);
+		printf("ë³´ìŠ¤ í¬ë¦¬ ë°©ì–´! : %d",200);
 		return(150);
 	}
 	else {
 		xy(20,35);
-		printf("º¸½º °ø°İ ¹æ¾î! : %d",100);
+		printf("ë³´ìŠ¤ ê³µê²© ë°©ì–´! : %d",100);
 		return(50);
 	}
 }
@@ -262,12 +262,12 @@ int bossattack() {
 	int i = rand()%5;
 	if(i == 4) {
 		xy(20,35);
-		printf("º¸½º Å©¸®Æ¼ÄÃ!! : %d",300);
+		printf("ë³´ìŠ¤ í¬ë¦¬í‹°ì»¬!! : %d",300);
 		return(300);
 	}
 	else {
 		xy(20,35);
-		printf("º¸½º ±âº» °ø°İ : %d",100);
+		printf("ë³´ìŠ¤ ê¸°ë³¸ ê³µê²© : %d",100);
 		return(100);
 	}
 }
@@ -278,12 +278,12 @@ int bbossattack() {
 	int i = rand()%5;
 	if(i == 4) {
 		xy(20,35);
-		printf("º¸½º Å©¸®Æ¼ÄÃ!! : %d",500);
+		printf("ë³´ìŠ¤ í¬ë¦¬í‹°ì»¬!! : %d",500);
 		return(500);
 	}
 	else {
 		xy(20,35);
-		printf("º¸½º ±âº» °ø°İ : %d",250);
+		printf("ë³´ìŠ¤ ê¸°ë³¸ ê³µê²© : %d",250);
 		return(250);
 	}
 }
@@ -293,9 +293,9 @@ int bag() {
 	system("cls");
 	bossmap(0);
 	xy(x-3,y);
-	printf("-> HP¹°¾à");
+	printf("-> HPë¬¼ì•½");
 	xy(x,y+1);
-	printf("MP¹°¾à");
+	printf("MPë¬¼ì•½");
 	while(1) {
 		int k = key();
 		switch(k) {
@@ -327,9 +327,9 @@ int bbag() {
 	system("cls");
 	bossmap(1);
 	xy(x-3,y);
-	printf("-> HP¹°¾à");
+	printf("-> HPë¬¼ì•½");
 	xy(x,y+1);
-	printf("MP¹°¾à");
+	printf("MPë¬¼ì•½");
 	while(1) {
 		int k = key();
 		switch(k) {
@@ -361,11 +361,11 @@ int skill() {
 	system("cls");
 	bossmap(0);
 	xy(x-3,y);
-	printf("-> ¹æÃµ°İ");
+	printf("-> ë°©ì²œê²©");
 	xy(x,y+1);
-	printf("°í´ëÀÇ Ã¢");
+	printf("ê³ ëŒ€ì˜ ì°½");
 	xy(x,y+2);
-	printf("Àı½ÇÇÑ ±¸¿ø");
+	printf("ì ˆì‹¤í•œ êµ¬ì›");
 	while(1) {
 		int k = key();
 		switch(k) {
@@ -397,11 +397,11 @@ int bskill() {
 	system("cls");
 	bossmap(1);
 	xy(x-3,y);
-	printf("-> ¹æÃµ°İ");
+	printf("-> ë°©ì²œê²©");
 	xy(x,y+1);
-	printf("°í´ëÀÇ Ã¢");
+	printf("ê³ ëŒ€ì˜ ì°½");
 	xy(x,y+2);
-	printf("Àı½ÇÇÑ ±¸¿ø");
+	printf("ì ˆì‹¤í•œ êµ¬ì›");
 	while(1) {
 		int k = key();
 		switch(k) {
@@ -518,7 +518,7 @@ int easy() {
 						userHP = userHP + 300; 
 						if (userHP <= 10000) {
 							xy(20,35);
-							printf("HP°¡ 300 È¸º¹ µÇ¾ú½À´Ï´Ù.");
+							printf("HPê°€ 300 íšŒë³µ ë˜ì—ˆìŠµë‹ˆë‹¤.");
 							sleep(2);
 							ba = bossattack();
 							sleep(2);
@@ -528,7 +528,7 @@ int easy() {
 						else {
 							over = userHP - 10000;
 							xy(20,35);
-							printf("HP°¡ %d È¸º¹ µÇ¾ú½À´Ï´Ù.", 300 - over);
+							printf("HPê°€ %d íšŒë³µ ë˜ì—ˆìŠµë‹ˆë‹¤.", 300 - over);
 							sleep(2);
 							userHP = userHP - over;
 							ba = bossattack();
@@ -547,7 +547,7 @@ int easy() {
 						system("cls");
 						bossmap(0);
 						xy(20,35);
-						printf("MP°¡ 200 È¸º¹ µÇ¾ú½À´Ï´Ù.");
+						printf("MPê°€ 200 íšŒë³µ ë˜ì—ˆìŠµë‹ˆë‹¤.");
 						sleep(2); 
 						userMP = userMP + 200; 
 						ba = bossattack();
@@ -568,7 +568,7 @@ int stop(){
 	system("cls");
 	bossmap(0);
 	xy(20,35);
-	printf("»ç¿ëÇÒ ¼ö ¾ø½À´Ï´Ù.");
+	printf("ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 	sleep(2);
 	return 0; 
 }
@@ -577,7 +577,7 @@ int bstop(){
 	system("cls");
 	bossmap(1);
 	xy(20,35);
-	printf("»ç¿ëÇÒ ¼ö ¾ø½À´Ï´Ù.");
+	printf("ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 	sleep(2);
 	return 0; 
 }
@@ -588,12 +588,12 @@ int foot() {
 	bossmap(0);
 	if (i == 3) {
 		xy(20,35);
-		printf("¹æÃµ°İ Å©¸®Æ¼ÄÃ!! µ¥¹ÌÁö : %d",1000);
+		printf("ë°©ì²œê²© í¬ë¦¬í‹°ì»¬!! ë°ë¯¸ì§€ : %d",1000);
 		return 1000;
 	}
 	else {
 		xy(20,35);
-		printf("¹æÃµ°İ! µ¥¹ÌÁö : %d",500);
+		printf("ë°©ì²œê²©! ë°ë¯¸ì§€ : %d",500);
 		return 500;
 	}
 }
@@ -604,12 +604,12 @@ int bfoot() {
 	bossmap(1);
 	if (i == 3) {
 		xy(20,35);
-		printf("¹æÃµ°İ Å©¸®Æ¼ÄÃ!! µ¥¹ÌÁö : %d",1000);
+		printf("ë°©ì²œê²© í¬ë¦¬í‹°ì»¬!! ë°ë¯¸ì§€ : %d",1000);
 		return 1000;
 	}
 	else {
 		xy(20,35);
-		printf("¹æÃµ°İ! µ¥¹ÌÁö : %d",500);
+		printf("ë°©ì²œê²©! ë°ë¯¸ì§€ : %d",500);
 		return 500;
 	}
 }
@@ -620,12 +620,12 @@ int spear() {
 	bossmap(0);
 	if (i==2) {
 		xy(20,35);
-		printf("°í´ëÀÇ Ã¢ Å©¸®Æ¼ÄÃ!! µ¥¹ÌÁö : %d",1500);
+		printf("ê³ ëŒ€ì˜ ì°½ í¬ë¦¬í‹°ì»¬!! ë°ë¯¸ì§€ : %d",1500);
 		return 1500;
 	}
 	else {
 		xy(20,35);
-		printf("°í´ëÀÇ Ã¢! µ¥¹ÌÁö : %d",300);
+		printf("ê³ ëŒ€ì˜ ì°½! ë°ë¯¸ì§€ : %d",300);
 		return 300;
 	}
 }
@@ -636,12 +636,12 @@ int bspear() {
 	bossmap(1);
 	if (i==2) {
 		xy(20,35);
-		printf("°í´ëÀÇ Ã¢ Å©¸®Æ¼ÄÃ!! µ¥¹ÌÁö : %d",1500);
+		printf("ê³ ëŒ€ì˜ ì°½ í¬ë¦¬í‹°ì»¬!! ë°ë¯¸ì§€ : %d",1500);
 		return 1500;
 	}
 	else {
 		xy(20,35);
-		printf("°í´ëÀÇ Ã¢! µ¥¹ÌÁö : %d",300);
+		printf("ê³ ëŒ€ì˜ ì°½! ë°ë¯¸ì§€ : %d",300);
 		return 300;
 	}
 }
@@ -654,12 +654,12 @@ int heal() {
 		easyover = userHP + 400 - 10000;
 		bus = 400 - easyover;
 		xy(20,35);
-		printf("Àı½ÇÇÑ ±¸¿ø! Ã¼·ÂÈ¸º¹ : %d", bus);
+		printf("ì ˆì‹¤í•œ êµ¬ì›! ì²´ë ¥íšŒë³µ : %d", bus);
 		return(bus);
 	}
 	else {
 		xy(20,35);
-		printf("Àı½ÇÇÑ ±¸¿ø! Ã¼·ÂÈ¸º¹ : %d",400);
+		printf("ì ˆì‹¤í•œ êµ¬ì›! ì²´ë ¥íšŒë³µ : %d",400);
 		return 400;
 	}
 }
@@ -672,12 +672,12 @@ int bheal() {
 		hardover = userHP + 400 - 10000;
 		bus = 400 - hardover;
 		xy(20,35);
-		printf("Àı½ÇÇÑ ±¸¿ø! Ã¼·ÂÈ¸º¹ : %d",bus);
+		printf("ì ˆì‹¤í•œ êµ¬ì›! ì²´ë ¥íšŒë³µ : %d",bus);
 		return(bus);
 	}
 	else {
 		xy(20,35);
-		printf("Àı½ÇÇÑ ±¸¿ø! Ã¼·ÂÈ¸º¹ : %d",400);
+		printf("ì ˆì‹¤í•œ êµ¬ì›! ì²´ë ¥íšŒë³µ : %d",400);
 		return 400;
 	}
 }
@@ -686,7 +686,7 @@ int bossmap(int j) {
 	if (j == 0) {
 		printf("\n");
 		printf("                                 .:=::\n");
-		printf("                                .=*%%%#%@@@+...                      º¸½ºHP : %d/10000\n",easybossHP);
+		printf("                                .=*%%%#%@@@+...                      ë³´ìŠ¤HP : %d/10000\n",easybossHP);
 		printf("                            :+#%#*+++*@@@@@@%#%#=\n");
 		printf("                         *@@@@@@%@@@@@@@@@##**+@#:      .+:=\n");
 		printf("                       .%@@@@@@@@@@@@@@@@+*@*+=:==       :. ::\n");
@@ -715,17 +715,17 @@ int bossmap(int j) {
 		printf("                          .++=.                 #@@@@@%+:.\n");
 		printf("                                                +++#@@%+.\n");
 		printf("\n");
-		printf("¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ"); 
+		printf("ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡"); 
 		xy(20,32);
-		printf("À¯Àú HP : %d / 10000",userHP);
+		printf("ìœ ì € HP : %d / 10000",userHP);
 		xy(20,33);
-		printf("À¯Àú MP : %d / 2000",userMP);
+		printf("ìœ ì € MP : %d / 2000",userMP);
 		return 0;
 	}
 	else if (j == 1) {
 		printf("\n");
 		printf("                                 .:=::\n");
-		printf("                                .=*%%%#%@@@+...                      º¸½ºHP : ???????/???????\n");
+		printf("                                .=*%%%#%@@@+...                      ë³´ìŠ¤HP : ???????/???????\n");
 		printf("                            :+#%#*+++*@@@@@@%#%#=\n");
 		printf("                         *@@@@@@%@@@@@@@@@##**+@#:      .+:=\n");
 		printf("                       .%@@@@@@@@@@@@@@@@+*@*+=:==       :. ::\n");
@@ -754,11 +754,11 @@ int bossmap(int j) {
 		printf("                          .++=.                 #@@@@@%+:.\n");
 		printf("                                                +++#@@%+.\n");
 		printf("\n");
-		printf("¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ¤Ñ"); 
+		printf("ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡ã…¡"); 
 		xy(20,32);
-		printf("À¯Àú HP : %d / 10000",userHP);
+		printf("ìœ ì € HP : %d / 10000",userHP);
 		xy(20,33);
-		printf("À¯Àú MP : %d / 2000",userMP);
+		printf("ìœ ì € MP : %d / 2000",userMP);
 		return 0;
 	}
 }
@@ -852,7 +852,7 @@ int hard() {
 						userHP = userHP + 300;
 						if (userHP <= 10000) {
 							xy(20,35);
-							printf("HP°¡ 300 È¸º¹ µÇ¾ú½À´Ï´Ù.");
+							printf("HPê°€ 300 íšŒë³µ ë˜ì—ˆìŠµë‹ˆë‹¤.");
 							sleep(2);
 							ba = bbossattack();
 							sleep(2);
@@ -862,7 +862,7 @@ int hard() {
 						else {
 							over = userHP - 10000;
 							xy(20,35);
-							printf("HP°¡ %d È¸º¹ µÇ¾ú½À´Ï´Ù.",300 - over);
+							printf("HPê°€ %d íšŒë³µ ë˜ì—ˆìŠµë‹ˆë‹¤.",300 - over);
 							sleep(2);
 							userHP = userHP - over;
 							ba = bbossattack();
@@ -881,7 +881,7 @@ int hard() {
 						system("cls");
 						bossmap(1);
 						xy(20,35);
-						printf("MP°¡ 200 È¸º¹ µÇ¾ú½À´Ï´Ù.");
+						printf("MPê°€ 200 íšŒë³µ ë˜ì—ˆìŠµë‹ˆë‹¤.");
 						sleep(2); 
 						ba = bbossattack();
 						sleep(2);
