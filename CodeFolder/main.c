@@ -15,11 +15,11 @@ int main() {
 				if(ea == 1) {
 					system("cls");
 					xy(35,12);
-					printf("Å¬¸®¾î!! ÃàÇÏµå¸³´Ï´Ù.\n");
+					printf("í´ë¦¬ì–´!! ì¶•í•˜ë“œë¦½ë‹ˆë‹¤.\n");
 					xy(35,13);
-					printf("»ç¿ëÇÑ ÅÏ¼ö = %d",count);
+					printf("ì‚¬ìš©í•œ í„´ìˆ˜ = %d",count);
 					xy(35,14);
-					printf("5ÃÊÈÄ¿¡ Á¾·áÇÕ´Ï´Ù.");
+					printf("5ì´ˆí›„ì— ì¢…ë£Œí•©ë‹ˆë‹¤.");
 					printf("\n\n\n\n\n\n\n\n\n");
 					sleep(5);
 					break;
@@ -27,28 +27,28 @@ int main() {
 				if(ea == 2) {
 					system("cls");
 					xy(35,12);
-					printf("Å¬¸®¾î¿¡ ½ÇÆĞÇß½À´Ï´Ù.\n");
+					printf("í´ë¦¬ì–´ì— ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤.\n");
 					xy(35,13);
-					printf("»ç¿ëÇÑ ÅÏ¼ö = %d",count);
+					printf("ì‚¬ìš©í•œ í„´ìˆ˜ = %d",count);
 					xy(35,14);
-					printf("5ÃÊÈÄ¿¡ Á¾·áÇÕ´Ï´Ù.");
+					printf("5ì´ˆí›„ì— ì¢…ë£Œí•©ë‹ˆë‹¤.");
 					printf("\n\n\n\n\n\n\n\n\n");
 					sleep(5);
 					break;
 				}
 			}
 			else if (n == 1) {
-				printf("¾î·Á¿ò ¼±ÅÃ");
+				printf("ì–´ë ¤ì›€ ì„ íƒ");
 				system("cls");
 				int ha = hard(); 
 				if (ha == 1) {
 					system("cls");
 					xy(35,12);
-					printf("Å¬¸®¾î!! ÃàÇÏµå¸³´Ï´Ù.\n");
+					printf("í´ë¦¬ì–´!! ì¶•í•˜ë“œë¦½ë‹ˆë‹¤.\n");
 					xy(35,13);
-					printf("»ç¿ëÇÑ ÅÏ¼ö = %d",count);
+					printf("ì‚¬ìš©í•œ í„´ìˆ˜ = %d",count);
 					xy(35,14);
-					printf("5ÃÊÈÄ¿¡ Á¾·áÇÕ´Ï´Ù.");
+					printf("5ì´ˆí›„ì— ì¢…ë£Œí•©ë‹ˆë‹¤.");
 					printf("\n\n\n\n\n\n\n\n\n");
 					sleep(5);
 					break;
@@ -56,11 +56,11 @@ int main() {
 				if(ha == 2) {
 					system("cls");
 					xy(35,12);
-					printf("Å¬¸®¾î¿¡ ½ÇÆĞÇß½À´Ï´Ù.\n");
+					printf("í´ë¦¬ì–´ì— ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤.\n");
 					xy(35,13);
-					printf("»ç¿ëÇÑ ÅÏ¼ö = %d",count);
+					printf("ì‚¬ìš©í•œ í„´ìˆ˜ = %d",count);
 					xy(35,14);
-					printf("5ÃÊÈÄ¿¡ Á¾·áÇÕ´Ï´Ù.");
+					printf("5ì´ˆí›„ì— ì¢…ë£Œí•©ë‹ˆë‹¤.");
 					printf("\n\n\n\n\n\n\n\n\n");
 					sleep(5);
 					break;
